@@ -16,10 +16,18 @@
 		D8ABDA0C239D767200D219B1 /* YoungestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8ABDA0B239D767200D219B1 /* YoungestTests.swift */; };
 		D8ABDA17239D76B200D219B1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8ABDA16239D76B200D219B1 /* Model.swift */; };
 		D8ABDA1B239E0F4A00D219B1 /* DarkNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8ABDA1A239E0F4A00D219B1 /* DarkNavigationController.swift */; };
+		D8BB2F79239E148300F5863A /* YoungestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BB2F78239E148300F5863A /* YoungestUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		D8ABDA08239D767200D219B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8ABD9E9239D766F00D219B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8ABD9F0239D766F00D219B1;
+			remoteInfo = Youngest;
+		};
+		D8BB2F7B239E148300F5863A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D8ABD9E9239D766F00D219B1 /* Project object */;
 			proxyType = 1;
@@ -42,6 +50,9 @@
 		D8ABDA0D239D767200D219B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8ABDA16239D76B200D219B1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		D8ABDA1A239E0F4A00D219B1 /* DarkNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkNavigationController.swift; sourceTree = "<group>"; };
+		D8BB2F76239E148200F5863A /* YoungestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YoungestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8BB2F78239E148300F5863A /* YoungestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoungestUITests.swift; sourceTree = "<group>"; };
+		D8BB2F7A239E148300F5863A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +70,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D8BB2F73239E148200F5863A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -67,6 +85,7 @@
 			children = (
 				D8ABD9F3239D766F00D219B1 /* Youngest */,
 				D8ABDA0A239D767200D219B1 /* YoungestTests */,
+				D8BB2F77239E148300F5863A /* YoungestUITests */,
 				D8ABD9F2239D766F00D219B1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,6 +95,7 @@
 			children = (
 				D8ABD9F1239D766F00D219B1 /* Youngest.app */,
 				D8ABDA07239D767200D219B1 /* YoungestTests.xctest */,
+				D8BB2F76239E148200F5863A /* YoungestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +123,15 @@
 				D8ABDA0D239D767200D219B1 /* Info.plist */,
 			);
 			path = YoungestTests;
+			sourceTree = "<group>";
+		};
+		D8BB2F77239E148300F5863A /* YoungestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D8BB2F78239E148300F5863A /* YoungestUITests.swift */,
+				D8BB2F7A239E148300F5863A /* Info.plist */,
+			);
+			path = YoungestUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +172,24 @@
 			productReference = D8ABDA07239D767200D219B1 /* YoungestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		D8BB2F75239E148200F5863A /* YoungestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8BB2F7F239E148300F5863A /* Build configuration list for PBXNativeTarget "YoungestUITests" */;
+			buildPhases = (
+				D8BB2F72239E148200F5863A /* Sources */,
+				D8BB2F73239E148200F5863A /* Frameworks */,
+				D8BB2F74239E148200F5863A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8BB2F7C239E148300F5863A /* PBXTargetDependency */,
+			);
+			name = YoungestUITests;
+			productName = YoungestUITests;
+			productReference = D8BB2F76239E148200F5863A /* YoungestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -157,6 +204,10 @@
 						CreatedOnToolsVersion = 11.2.1;
 					};
 					D8ABDA06239D767200D219B1 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = D8ABD9F0239D766F00D219B1;
+					};
+					D8BB2F75239E148200F5863A = {
 						CreatedOnToolsVersion = 11.2.1;
 						TestTargetID = D8ABD9F0239D766F00D219B1;
 					};
@@ -177,6 +228,7 @@
 			targets = (
 				D8ABD9F0239D766F00D219B1 /* Youngest */,
 				D8ABDA06239D767200D219B1 /* YoungestTests */,
+				D8BB2F75239E148200F5863A /* YoungestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -193,6 +245,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D8ABDA05239D767200D219B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8BB2F74239E148200F5863A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -222,6 +281,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D8BB2F72239E148200F5863A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8BB2F79239E148300F5863A /* YoungestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -229,6 +296,11 @@
 			isa = PBXTargetDependency;
 			target = D8ABD9F0239D766F00D219B1 /* Youngest */;
 			targetProxy = D8ABDA08239D767200D219B1 /* PBXContainerItemProxy */;
+		};
+		D8BB2F7C239E148300F5863A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8ABD9F0239D766F00D219B1 /* Youngest */;
+			targetProxy = D8BB2F7B239E148300F5863A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -446,6 +518,44 @@
 			};
 			name = Release;
 		};
+		D8BB2F7D239E148300F5863A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6GF8658PFD;
+				INFOPLIST_FILE = YoungestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.deadpixel.YoungestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Youngest;
+			};
+			name = Debug;
+		};
+		D8BB2F7E239E148300F5863A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6GF8658PFD;
+				INFOPLIST_FILE = YoungestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.deadpixel.YoungestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Youngest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -472,6 +582,15 @@
 			buildConfigurations = (
 				D8ABDA14239D767200D219B1 /* Debug */,
 				D8ABDA15239D767200D219B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8BB2F7F239E148300F5863A /* Build configuration list for PBXNativeTarget "YoungestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8BB2F7D239E148300F5863A /* Debug */,
+				D8BB2F7E239E148300F5863A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
