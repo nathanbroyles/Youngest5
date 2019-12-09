@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DarkNavigationController.swift
 //  Youngest
 //
 //  Created by Nathan Broyles on 12/8/19.
@@ -8,13 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class DarkNavigationController: UINavigationController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        overrideUserInterfaceStyle = .dark
     }
-
-
 }
-
