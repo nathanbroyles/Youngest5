@@ -35,9 +35,9 @@ class YoungestTests: XCTestCase {
     
     func test5Youngest() {
         let youngest = model.youngestUsers(5)
-        let youngestAgeSum = youngest?.reduce(0, {$0 + $1.age})
-        let testAgeSum = 20
-        XCTAssert(testAgeSum == youngestAgeSum)
+        let youngest5AgeSum = youngest?.reduce(0, {$0 + $1.age})
+        let test5AgeSum = 20
+        XCTAssert(test5AgeSum == youngest5AgeSum)
     }
 
     func testValidUser() {
