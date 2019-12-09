@@ -13,10 +13,8 @@ class YoungestTests: XCTestCase {
     
     let validUser = User(id: 0, name: "Valid", age: 21, number: "1234567890", photo: "", bio: "")
     let invalidUser = User(id: 1, name: "Invalid", age: 23, number: "123", photo: "", bio: "")
-    let model = Model()
-
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    lazy var model: Model = {
+        let model = Model()
         model.users = [
             User(id: 0, name: "", age: 9, number: "", photo: "", bio: ""),
             User(id: 1, name: "", age: 8, number: "", photo: "", bio: ""),
@@ -27,6 +25,11 @@ class YoungestTests: XCTestCase {
             User(id: 6, name: "", age: 3, number: "", photo: "", bio: ""),
             User(id: 7, name: "", age: 2, number: "", photo: "", bio: "")
         ]
+        return model
+    }()
+
+    override func setUp() {
+        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
     override func tearDown() {
